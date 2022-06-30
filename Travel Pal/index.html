@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/5548f5ed00.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: black;">
+       <font color="white" text-align="center"><b>TRAVEL PAL <i class="fa fa-bus" aria-hidden="true" style="color: orange"></i> </b></font> 
+
+        <font color="white" size="2"><a href="https://www.linkedin.com/in/anmol-pal-99b71b20a/?originalSubdomain=in" target="_main"><i class="fa fa-linkedin-square fa-2x"> </i></a><b> MADE BY ANMOL PAL</b></font>  
+    </nav>
+    <div id="container">
+        <div id="mynetwork">
+        </div>
+        <div id="container2">
+            <span id="temptext2" style="width: 100%; text-align: center; font-size: x-large">
+            </span>
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                <b>YELLOW LINK REPRESENTS CAR ROUTE</b> : <i class="fa fa-car" aria-hidden="true" style="color: orange"></i><br>
+                <b>GREEN LINK REPRESENTS BUS ROUTE</b> : <i class="fa fa-bus" aria-hidden="true" style="color: green"></i><br>
+               <font size="2" >THESE WEIGHTS CAN IDEALLY REPRESENT TIME OR DISTANCE
+               </font><br>
+               <font size="2"><i><b>THIS ALGORITHM CALCULATES MIN WEIGHT USING ATMOST 1 BUS  </b></i></font> 
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+    <div id="apna">
+        <br>
+        <button type="button" class="btn btn-danger" id="generate-graph">GET NEW MAP</button>
+        <br>
+        <button type="button" class="btn btn-success" id="solve">CALCULATE THE MIN WEIGHT</button>
+
+
+        
+    </div>
+</body>
+
+</html>
